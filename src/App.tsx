@@ -5,7 +5,7 @@ function App() {
 
 
   return (
-    <div className='flex justify-center py-20 h-screen w-screen'>
+    <div className='flex justify-center py-20 h-screen w-screen '>
       <CronComponent />
     </div>
   )
