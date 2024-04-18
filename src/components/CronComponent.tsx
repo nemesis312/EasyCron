@@ -97,7 +97,7 @@ function CronComponent() {
           </a>
           <br />
         </div>
-        <div>
+        <div className="flex justify-center items-center p-8">
           <p className="italic font-thin mb-10">
             {generateCronDescription(
               cron.split(" ")[0],
@@ -110,7 +110,7 @@ function CronComponent() {
         </div>
       </CronOutputComponent>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 justify-center items-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 justify-center items-center p-8">
         <div className="">
           <CronInputComponent
             label="Minute"
@@ -172,7 +172,7 @@ function CronComponent() {
         </div>
       </div>
 
-      <div className="flex justify-end items-center gap-4">
+      <div className="flex justify-end items-center gap-4 p-8">
         <div className="flex justify-center items-center mt-4">
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-32"
