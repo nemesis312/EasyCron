@@ -2,7 +2,7 @@
   "homepage": "http://nemesis312.github.io/EasyCron/",
   "name": "easycron",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",

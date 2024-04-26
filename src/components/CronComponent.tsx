@@ -117,6 +117,7 @@ function CronComponent() {
             name="minute"
             min={0}
             max={59}
+            interval={["*/1", "*/2", "*/3", "*/4", "*/5", "*/10", "*/15", "*/30"]}
             includeStar={true}
             value={inputs.input1}
             onChange={handleMinuteChange}
@@ -129,6 +130,7 @@ function CronComponent() {
             name="hour"
             min={0}
             max={23}
+            interval={["*/1", "*/2", "*/3", "*/4", "*/6", "*/8", "*/12"]}
             includeStar={true}
             value={inputs.input2}
             onChange={handleHourChange}
@@ -141,6 +143,7 @@ function CronComponent() {
             name="dayofthemonth"
             min={1}
             max={31}
+            interval={[]}
             includeStar={true}
             value={inputs.input3}
             onChange={handleDayOfTheMonthChange}
@@ -153,6 +156,7 @@ function CronComponent() {
             name="month"
             min={1}
             max={12}
+            interval={[]}
             includeStar={true}
             value={inputs.input4}
             onChange={handleMonthChange}
@@ -165,6 +169,7 @@ function CronComponent() {
             name="dayoftheweek"
             min={0}
             max={7}
+            interval={[]}
             includeStar={true}
             value={inputs.input5}
             onChange={handleDayOfTheWeekChange}
@@ -175,7 +180,7 @@ function CronComponent() {
       <div className="flex justify-end items-center gap-4 p-8">
         <div className="flex justify-center items-center mt-4">
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-32"
+            className="bg-slate-500 hover:bg-slate-700 hover:border text-white font-bold py-2 px-4 rounded w-32"
             onClick={generateCron}
           >
             Generate
@@ -184,7 +189,7 @@ function CronComponent() {
 
         <div className="flex justify-center items-center mt-4">
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-32"
+            className="bg-slate-500 hover:bg-slate-700 hover:border text-white font-bold py-2 px-4 rounded w-32"
             onClick={clearInputs}
           >
             Clear
